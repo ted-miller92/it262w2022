@@ -24,7 +24,7 @@
 $sub_folder = 'it262w2022/winter_2022/';//If app installed in subfolder, place here.  name of folder, no leading or trailing forward or backslash
 define('SHOW_ALL_ERRORS', true); # TRUE = SHOW ALL SITE ERRORS - if FALSE must be logged in as ADMIN to view errors
 define('LOG_ALL_ERRORS', true); # TRUE = TRACK ALL ERRORS IN ERROR LOG FILE (UPDATED 7/14 FOR ZEPHIR!)
-define('SECURE',false); # true forces secure connection, https, for all site pages
+define('SECURE',true); # true forces secure connection, https, for all site pages
 date_default_timezone_set('America/Los_Angeles'); #sets default date/timezone for this website
 
 
@@ -102,6 +102,7 @@ $nav1['surveys/'] = "Surveys~The entrance to our Survey App";
 $nav1['demo/demo_shared.php'] = "Shared~A demo page for building mysqli shared connection based applications.";
 $nav1['demo/demo_pdo.php'] = "PDO~A demo page for building PDO connection based applications.";
 $nav1['demo/demo_contact.php'] = "Contact~A demo for building postback forms";
+$nav1['rss/index.php'] = "RSS~Some Feeds";
 $config->nav1 = $nav1;  #add to global config object - now available in all header/footers
 $config->tableEditor = ADMIN_PATH . 'nmEdit.php'; # Table Editor part of nmEdit package
 # CONTENT CONFIGURATION AREA (theme, content areas & nav arrays for header/footer )-----------------------------------------
